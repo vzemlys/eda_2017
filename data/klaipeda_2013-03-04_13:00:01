@@ -1,0 +1,675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="lt" lang="lt">
+<head>
+	<title>Orai šiandien | 15min.lt Mobili versija</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css" />
+	<![endif]-->
+	<!--[if lte IE 6]>
+	<script type="text/javascript">try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}</script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0, initial-scale=1.0, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no" />
+
+<style type="text/css">
+@media only screen and (max-device-width: 300px) {
+    body { max-width: 100% !important; }
+    .mainMenu {border-spacing: 1px !important;}
+    .meniu-btn, #submenu {font-size: 13px !important; }
+    .sub-mostread a, .sub-gal a, .sub-tv a {background-image: none !important; padding: 5px 3px !important; }
+   .ph-gal-img {float: none !important;}
+   .ph-gal-img img, .ads-cnt, .ads-cnt img {width: 100% !important;}
+}
+
+@media only screen and (max-device-width: 480px) {
+	body { width: auto !important; max-width: none !important;  }
+}
+
+@media only screen and (max-device-width: 420px) {
+   .meniu-btn a .t-break1, .meniu-btn a .t-break2 {float: left !important; }
+   .mainMenu .no-icon a {padding: 0 !important; }
+}
+
+@-o-viewport {
+  width: 240px !important;
+  zoom: 1 !important;
+}
+
+
+</style><link rel="dns-prefetch" href="//s1.15cdn.lt" />
+<link rel="dns-prefetch" href="//s2.15cdn.lt" />
+<link rel="dns-prefetch" href="//adsplius.lt" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.15min.lt/15min_srch.xml" title="15min.lt" />
+ <meta name="HandheldFriendly" content="true" />
+  <link href="http://www.15min.lt/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+   <link rel="apple-touch-icon" href="http://www.15min.lt/mobile-apple-touch-icon.png" />
+  <meta property="fb:admins" content="1269495316" />
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  _|  _|_|_|_|                  _|                _|    _|
+_|_|  _|        _|_|_|  _|_|        _|_|_|        _|  _|_|_|_|
+  _|  _|_|_|    _|    _|    _|  _|  _|    _|      _|    _|
+  _|        _|  _|    _|    _|  _|  _|    _|      _|    _|
+  _|  _|_|_|    _|    _|    _|  _|  _|    _|  _|  _|      _|_|
+-->	<link type="text/css" rel="stylesheet" href="http://s1.15cdn.lt/static/css/259/3019552911.css" /><script type="text/javascript" src="http://s1.15cdn.lt/static/js/111/732365164.js"></script></head>
+<body>
+	
+<!-- (C) 2000-2012 Gemius SA - gemiusAudience / m_15min_orai --><script type="text/javascript">/* <![CDATA[ */ var pp_gemius_identifier = 'cntAfcchxzCiLgBi8XvGi4aATO4pYwQyk0hTiUB1Ebr.y7'; (function(d,t) {var ex; try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.async='true'; gt.src=l+'://lt.hit.gemius.pl/xlgemius.js'; s.parentNode.insertBefore(gt,s);} catch (ex) {}}(document,'script')); /*]]> */</script><script type="text/javascript" charset="utf-8">
+/* <![CDATA[ */
+    function refreshPage() {
+        var link = window.location.href;
+        window.location.href = link;
+    }
+
+    function reset15min() {
+        setCookie('m-lst',"",-1);
+        setCookie('m-qlt',"",-1);
+        setCookie('m-lmt',"",-1);
+        setCookie('m-itm_v3',"",-1);
+        refreshPage();
+    }
+
+
+	function showBox(b_name, b_button)
+	{
+		var e = document.getElementById(b_name);
+		var a1 = document.getElementById('m-settings');
+		var a2 = document.getElementById('cat-lists');
+
+		if (e.style.display !='none') {
+			e.style.display = 'none';
+			document.getElementById(b_button).className = document.getElementById(b_button).className.replace( /(?:^|\s)active(?!\S)/g , '' );
+		} else {
+			e.style.display = 'block';
+			document.getElementById(b_button).className += " active";
+			if (b_name != 'm-settings' && a1.style.display != 'none' ) {
+				a1.style.display = 'none';
+				document.getElementById('button-settings').className = document.getElementById('button-settings').className.replace( /(?:^|\s)active(?!\S)/g , '' );
+			}
+
+			if (b_name != 'cat-lists' && a2.style.display != 'none' ) {
+				a2.style.display = 'none';
+			}
+		}
+	}
+
+
+	function saveItem(type, val)
+	{
+	    var link = window.location.href;
+   		if ( type == 'm-lmt' ) {
+   			link = link.replace(/\?psl\=\d{1,}/g, '');
+ 		}
+		setCookie(type,val,365);
+        window.location.href = link;
+	}
+
+
+    function changeList(val)
+	{
+        var content = '';
+        for (i=1;i<=val;i++) {
+           item = 'm2-item-' +i;
+           elm = document.getElementById(item)
+           var selected = elm.options[elm.selectedIndex].value;
+           content += selected + ';';
+        }
+
+        setCookie('m-itm_v3',content,365);
+        refreshPage();
+	}
+/* ]]> */
+</script>
+<div id="menu-cnt">
+			<table class="mainMenu">
+    	<tr>
+        	<td id="logo" class="bg-green bd-green"><a href="http://m.15min.lt/"><img src="http://s2.15cdn.lt/img/logos/m_15_lt_logo.png" alt="m.15min.lt - 15min.lt mobili versija" id="logo_img" /></a></td>
+
+	        <td id="menu-btn-1" class="meniu-btn  bg-green bd-green no-icon"><a class="icon" href="http://m.15min.lt/naujienos/aktualu/">Aktualu</a></td>
+	        <td id="menu-btn-2" class="meniu-btn  bg-lgreen bd-green no-icon"><a class="icon" href="http://m.15min.lt/naujienos/pinigai/">Pinigai</a></td>
+	        <td id="menu-btn-3" class="meniu-btn  bg-orange bd-orange"><a class="icon" href="http://m.15min.lt/sportas">Sportas</a></td>
+		</tr>
+		<tr>
+			<td id="menu-btn-4" class="meniu-btn  bg-red bd-red"><a class="icon" href="http://m.15min.lt/zmones">Žmonės.lt</a></td>
+		    <td id="menu-btn-5" class="meniu-btn  bg-black bd-black"><a class="icon" href="http://m.15min.lt/gazas"><span style="color:#E4B634;">Gazas</span>.lt</a></td>
+		    <td id="menu-btn-6" class="meniu-btn  bg-green bd-green no-icon"><a class="icon" href="http://m.15min.lt/naujienos/kultura/">Kultūra</a></td>
+		    <td id="menu-btn-7" class="meniu-btn  bg-purple bd-purple no-icon"><a class="icon" href="http://m.15min.lt/naujienos/mokslasit/"><span class="t-break1">Mokslas.IT</a></td>
+		</tr>
+	</table>
+	
+
+		<div class="submenu  bg-green" >
+    	<div class="fl sub-mostread" ><a href="http://m.15min.lt/skaitomiausios">Top</a></div>
+    	<div class="fl sub-gal"><a href="http://m.15min.lt/foto/">Galerijos</a></div>
+    	<div class="fl sub-weather active"><a class="cloud" href="http://m.15min.lt/orai">Orai</a></div>
+    	<div class="fl sub-tv"><a href="http://m.15min.lt/tv/dabar/">TV.LT</a></div>
+    	<div class="fl sub-search"><a class="bg-more-btn" href="http://m.15min.lt/paieska/">Paieška</a></div>
+    	<div id="button-settings" class="fl sub-settings"><a onclick="showBox('m-settings', 'button-settings');">Nustatymai</a></div>
+    	<div id="button-catlists" class="fr sub-more"><a onclick="showBox('cat-lists');">Daugiau</a></div>
+
+  	</div>
+ 	<div class="clear">&nbsp;</div>
+
+    <div id="cat-lists" class="m-box black-border" style="display: none;">
+        <table class="bodySmall" style="padding: 0;" align="center" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td style="text-align: center;">
+					<a style="float: right;" class="green-button" href="http://m.15min.lt/skaitomiausios/"><span class="mostread">&nbsp;</span>Skaitomiausios</a>
+					<a style="float: right;" class="green-button" href="http://m.15min.lt/naujienos/"><span class="newest">&nbsp;</span>Naujausios</a>
+					<div class="clear">&nbsp;</div>
+					<div class="ln-grey">&nbsp;</div>
+				</td>
+			</tr>
+     	
+ 		 	<tr>
+			 	<td style="text-align: center;">
+		 			<a class="green-button" href="http://m.15min.lt/apklausos">Apklausos</a>
+			 		<a class="grey-button" href="http://m.15min.lt/naujienos/ziniosgyvai/nuomones">Nuomonės</a>
+			 		<a class="grey-button" href="http://m.15min.lt/naujienos/ziniosgyvai/komentarai">Komentarai</a>
+			 		<a class="yellow-button" href="http://m.15min.lt/sportas">Sportas</a>
+			 		<a class="black-button" href="http://m.15min.lt/gazas">Gazas.lt</a>
+			 		<a class="red-button" href="http://m.15min.lt/zmones">Žmonės.lt</a>
+                    <a class="purple-button" href="http://m.15min.lt/naujienos/mokslasit">Mokslas.IT</a>
+                    <a class="brown-button" href="http://m.15min.lt/naujienos/pasaulis-kiseneje">PasaulisKišenėje.lt</a>
+                    <a class="red-button" href="http://m.15min.lt/naujienos/ji24">Ji24.lt</a>
+                    <a class="blue-button" href="http://m.15min.lt/naujienos/deuce">Deuce.lt</a>
+					<a class="lgreen-button" href="http://m.15min.lt/naujienos/ikrauk">Ikrauk.lt</a>
+					<a class="white-button" href="http://m.15min.lt/naujienos/aktualu">Aktualu</a>
+                    <a class="white-button" href="http://m.15min.lt/naujienos/augintiniai">Augintiniai</a>
+                    <a class="white-button" href="http://m.15min.lt/naujienos/kultura">Kultūra</a>
+                    <a class="white-button" href="http://m.15min.lt/naujienos/laisvalaikis">Laisvalaikis</a>
+                    <a class="white-button" href="http://m.15min.lt/naujienos/aktualu/nusikaltimaiirnelaimes/">Kriminalai</a>
+
+			 		<div class="clear">&nbsp;</div>
+			 		<div class="ln-grey">&nbsp;</div>
+
+					<a class="green-button" style="width: 95%;" href="http://m.15min.lt/dienos-horoskopai/">Dienos horoskopas</a>
+
+			 		<div class="clear">&nbsp;</div>
+			 		<div class="ln-grey">&nbsp;</div>
+
+		 	 	</td>
+			 </tr>
+
+			 <tr>
+			 	<td style="text-align: center; padding: 5px 10px">
+			 		Daugiau rubrikų :
+					<select class="cat-select" name="categories_dd" id="categories_dd" onchange="if (this.value != '') { window.location=this.value; }">
+										<option value="">Pasirinkite rubriką</option>
+									 									<option  value="http://m.15min.lt/naujienos/aktualu/">Aktualu</option>											 									<option  value="http://m.15min.lt/naujienos/aktualu/lietuva/">&rarr;&nbsp;Lietuva</option>
+											 									<option  value="http://m.15min.lt/naujienos/aktualu/pasaulis/">&rarr;&nbsp;Užsienis</option>
+											 									<option  value="http://m.15min.lt/naujienos/aktualu/nusikaltimaiirnelaimes/">&rarr;&nbsp;Kriminalai</option>
+											 									<option  value="http://m.15min.lt/naujienos/aktualu/konferencijos/">&rarr;&nbsp;Konferencijos</option>
+											 									<option  value="http://m.15min.lt/naujienos/aktualu/garbes-aleja/">&rarr;&nbsp;Garbės alėja</option>
+											 									<option  value="http://m.15min.lt/naujienos/ziniosgyvai/">Žinios gyvai</option>											 									<option  value="http://m.15min.lt/naujienos/ziniosgyvai/komentarai/">&rarr;&nbsp;Komentarai</option>
+											 									<option  value="http://m.15min.lt/naujienos/ziniosgyvai/nuomones/">&rarr;&nbsp;Nuomonės</option>
+											 									<option  value="http://m.15min.lt/naujienos/ziniosgyvai/interviu/">&rarr;&nbsp;Interviu</option>
+											 									<option  value="http://m.15min.lt/naujienos/ziniosgyvai/antikorupcija/">&rarr;&nbsp;Antikorupcija</option>
+											 									<option  value="http://m.15min.lt/naujienos/ziniosgyvai/emigrantai/">&rarr;&nbsp;Emigrantai</option>
+											 									<option  value="http://m.15min.lt/naujienos/ziniosgyvai/dalyvauk/">&rarr;&nbsp;Konkursai</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/">Pinigai</option>											 									<option  value="http://m.15min.lt/naujienos/pinigai/lietuvos-naujienos/">&rarr;&nbsp;Lietuva</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/finansai/">&rarr;&nbsp;Finansai</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/uzsienis/">&rarr;&nbsp;Užsienis</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/bendroves/">&rarr;&nbsp;Bendrovės</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/energetika/">&rarr;&nbsp;Energetika</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/transportas/">&rarr;&nbsp;Transportas</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/zemes-ukis/">&rarr;&nbsp;Žemės ūkis</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/geronomika/">&rarr;&nbsp;Geronomika</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/Snoro-istorija/">&rarr;&nbsp;Snoro istorija</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/mokslas-verslui/">&rarr;&nbsp;Mokslas verslui</option>
+											 									<option  value="http://m.15min.lt/naujienos/pinigai/life-sciences-baltics/">&rarr;&nbsp;Life Sciences Baltics</option>
+											 									<option  value="http://m.15min.lt/naujienos/sportas/">Sportas</option>											 									<option  value="http://m.15min.lt/naujienos/sportas/krepsinis/">&rarr;&nbsp;Krepšinis</option>
+											 									<option  value="http://m.15min.lt/naujienos/sportas/futbolas/">&rarr;&nbsp;Futbolas</option>
+											 									<option  value="http://m.15min.lt/naujienos/sportas/lengvoji-atletika/">&rarr;&nbsp;Lengvoji atletika</option>
+											 									<option  value="http://m.15min.lt/naujienos/sportas/kita/">&rarr;&nbsp;Kita</option>
+											 									<option  value="http://m.15min.lt/naujienos/sportas/ziemos-sportas/">&rarr;&nbsp;Žiemos sportas</option>
+											 									<option  value="http://m.15min.lt/naujienos/sportas/muilas/">&rarr;&nbsp;Muilas</option>
+											 									<option  value="http://m.15min.lt/naujienos/kultura/">Kultūra</option>											 									<option  value="http://m.15min.lt/naujienos/laisvalaikis/">Laisvalaikis</option>											 									<option  value="http://m.15min.lt/naujienos/laisvalaikis/zukle/">&rarr;&nbsp;Žūklė</option>
+											 									<option  value="http://m.15min.lt/naujienos/laisvalaikis/ivykiai/">&rarr;&nbsp;Įvykiai</option>
+											 									<option  value="http://m.15min.lt/naujienos/laisvalaikis/du-ratai/">&rarr;&nbsp;Du Ratai</option>
+											 									<option  value="http://m.15min.lt/naujienos/augintiniai/">Augintiniai</option>											 									<option  value="http://m.15min.lt/naujienos/studentu-zona/">Studentai</option>											 									<option  value="http://m.15min.lt/naujienos/archyvas/">Archyvas</option>											 									<option  value="http://m.15min.lt/naujienos/gazas/">GAZAS.LT</option>											 									<option  value="http://m.15min.lt/naujienos/gazas/naujoves/">&rarr;&nbsp;Naujovės</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/autorinka/">&rarr;&nbsp;Autorinka</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/gatve/">&rarr;&nbsp;Gatvė</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/autosportas/">&rarr;&nbsp;Autosportas</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/fotopolicija/">&rarr;&nbsp;Fotopolicija</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/zalias/">&rarr;&nbsp;Žalias</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/testai/">&rarr;&nbsp;Testai</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/gazo-garazas/">&rarr;&nbsp;Garažas</option>
+											 									<option  value="http://m.15min.lt/naujienos/gazas/dakar/">&rarr;&nbsp;Dakaras</option>
+											 					 	</select>
+	 			</td>
+		 	</tr>
+	 	</table>
+   		<div class="ln-grey">&nbsp;</div>
+        <a class="black-button" style="float: right;" onclick="showBox('cat-lists');"><span class="close">&nbsp;</span>Uždaryti</a>
+        <div class="clear">&nbsp;</div>
+      </div>
+		<div id="m-settings" class="m-box" style="display: none;">
+		<div class="bg-red" style="padding: 5px 6px;"><span style="color: #FFF; font-size: 12px; line-height: 13px;">Dėmesio: puslapio nustatymams saugoti yra reikalingas leidimas jūsų naršyklėje naudoti Cookies</span></div>
+		<div class="clear">&nbsp;</div>
+
+		<h3>Bendri nustatymai</h3>
+	  	<p style="color: #666;">Nuotraukų kokybė:</p>
+		<a class="yellow-button" style="text-align: center; width: 55px;" onclick="saveItem('m-qlt','L');"><span style="font-size: 20px; font-weight: bold;">L</span><br /><span style="font-size: 10px; line-height: 10px;">Žema<br />240px</span></a>
+		<a class="green-button" style="text-align: center; width: 55px;" onclick="saveItem('m-qlt','M');"><span style="font-size: 20px; font-weight: bold;">M</span><br /><span style="font-size: 10px; line-height: 10px">Vidutinė<br />320px</span></a>
+		<a class="red-button" style="text-align: center; width: 55px;" onclick="saveItem('m-qlt','HD');"><span style="font-size: 20px; font-weight: bold;">HD</span><br /><span style="font-size: 10px; line-height: 10px">Aukšta<br />480px</span></a>
+        <div class="clear">&nbsp;</div>
+
+        <div class="ln-sel  bg-grey" style="width: 45px; height: 8px;">&nbsp;</div>
+        <div class="ln-sel  bg-lgreen" style="width: 45px; height: 8px;">&nbsp;</div>
+        <div class="ln-sel  bg-grey" style="width: 45px; height: 8px;">&nbsp;</div>
+
+        <div class="clear">&nbsp;</div>
+        <div class="ln-grey">&nbsp;</div>
+
+        <p style="color: #666;">Naujienų eilučių skaičius puslapyje:</p>
+
+   		<a class="yellow-button" style="text-align: center; width: 50px;" onclick="saveItem('m-lmt','10');"><span style="font-size: 20px; font-weight: bold;">10</span></a>
+		<a class="green-button" style="text-align: center; width: 50px;" onclick="saveItem('m-lmt','20');"><span style="font-size: 20px; font-weight: bold;">20</span></a>
+        <a class="red-button" style="text-align: center; width: 50px;" onclick="saveItem('m-lmt','50');"><span style="font-size: 20px; font-weight: bold;">50</span></a>
+
+        <div class="clear">&nbsp;</div>
+        <div class="ln-sel  bg-grey" style="width: 40px; height: 8px;">&nbsp;</div>
+        <div class="ln-sel  bg-lgreen" style="width: 40px; height: 8px;">&nbsp;</div>
+        <div class="ln-sel  bg-grey" style="width: 40px; height: 8px;">&nbsp;</div>
+        <div class="clear">&nbsp;</div>
+
+        <div class="ln-grey">&nbsp;</div>
+
+        <p style="color: #666;">Rubrikos naujienų sąrašo išvedimo tipas:</p>
+
+		<a class="yellow-button" style="text-align: center; width: 60px;" onclick="saveItem('m-lst','T');"><span class="t-mode" style="font-size: 20px; font-weight: bold;">&nbsp;</span><br /><span style="font-size: 12px;">Tekstinis<br /></span></a>
+		<a class="green-button" style="text-align: center; width: 60px;" onclick="saveItem('m-lst','G');"><span class="g-mode" style="font-size: 20px; font-weight: bold;">&nbsp;</span><br /><span style="font-size: 12px;">Grafinis</span></a>
+
+        <div class="clear">&nbsp;</div>
+
+        <div class="ln-sel  bg-grey" style="width: 50px; height: 8px;">&nbsp;</div>
+        <div class="ln-sel  bg-lgreen" style="width: 50px; height: 8px;">&nbsp;</div>
+
+        <div class="clear">&nbsp;</div>
+
+
+                <div class="ln-grey">&nbsp;</div>
+	        <p style="color: #666;">Pagrindinio meniu nustatymai:</p>
+          	1:                  <select class="cat-select" style="width: 87%;" name="m2-item-1" id="m2-item-1">
+                      					<option  value="3">Sportas</option>
+    			      					<option  value="4">Žmonės.lt</option>
+    			      					<option  value="5">Gazas.lt</option>
+    			      					<option  value="7">Mokslas.IT</option>
+    			      					<option  value="9">PasaulisKišenėje.lt</option>
+    			      					<option  value="10">Ikrauk.lt</option>
+    			      					<option  value="15">Ji24.lt</option>
+    			      					<option  value="8">Deuce.lt</option>
+    			      					<option  selected="selected"  value="1">Aktualu</option>
+    			      					<option  value="2">Pinigai</option>
+    			      					<option  value="11">Laisvalaikis</option>
+    			      					<option  value="12">Augintiniai</option>
+    			      					<option  value="13">Horoskopas</option>
+    			      					<option  value="14">Kriminalai</option>
+    			      					<option  value="6">Kultūra</option>
+    			      	 	         </select>
+                     <div class="clear">&nbsp;</div>
+                     2:                  <select class="cat-select" style="width: 87%;" name="m2-item-2" id="m2-item-2">
+                      					<option  value="3">Sportas</option>
+    			      					<option  value="4">Žmonės.lt</option>
+    			      					<option  value="5">Gazas.lt</option>
+    			      					<option  value="7">Mokslas.IT</option>
+    			      					<option  value="9">PasaulisKišenėje.lt</option>
+    			      					<option  value="10">Ikrauk.lt</option>
+    			      					<option  value="15">Ji24.lt</option>
+    			      					<option  value="8">Deuce.lt</option>
+    			      					<option  value="1">Aktualu</option>
+    			      					<option  selected="selected"  value="2">Pinigai</option>
+    			      					<option  value="11">Laisvalaikis</option>
+    			      					<option  value="12">Augintiniai</option>
+    			      					<option  value="13">Horoskopas</option>
+    			      					<option  value="14">Kriminalai</option>
+    			      					<option  value="6">Kultūra</option>
+    			      	 	         </select>
+                     <div class="clear">&nbsp;</div>
+                     3:                  <select class="cat-select" style="width: 87%;" name="m2-item-3" id="m2-item-3">
+                      					<option  selected="selected"  value="3">Sportas</option>
+    			      					<option  value="4">Žmonės.lt</option>
+    			      					<option  value="5">Gazas.lt</option>
+    			      					<option  value="7">Mokslas.IT</option>
+    			      					<option  value="9">PasaulisKišenėje.lt</option>
+    			      					<option  value="10">Ikrauk.lt</option>
+    			      					<option  value="15">Ji24.lt</option>
+    			      					<option  value="8">Deuce.lt</option>
+    			      					<option  value="1">Aktualu</option>
+    			      					<option  value="2">Pinigai</option>
+    			      					<option  value="11">Laisvalaikis</option>
+    			      					<option  value="12">Augintiniai</option>
+    			      					<option  value="13">Horoskopas</option>
+    			      					<option  value="14">Kriminalai</option>
+    			      					<option  value="6">Kultūra</option>
+    			      	 	         </select>
+                     <div class="clear">&nbsp;</div>
+                     4:                  <select class="cat-select" style="width: 87%;" name="m2-item-4" id="m2-item-4">
+                      					<option  value="3">Sportas</option>
+    			      					<option  selected="selected"  value="4">Žmonės.lt</option>
+    			      					<option  value="5">Gazas.lt</option>
+    			      					<option  value="7">Mokslas.IT</option>
+    			      					<option  value="9">PasaulisKišenėje.lt</option>
+    			      					<option  value="10">Ikrauk.lt</option>
+    			      					<option  value="15">Ji24.lt</option>
+    			      					<option  value="8">Deuce.lt</option>
+    			      					<option  value="1">Aktualu</option>
+    			      					<option  value="2">Pinigai</option>
+    			      					<option  value="11">Laisvalaikis</option>
+    			      					<option  value="12">Augintiniai</option>
+    			      					<option  value="13">Horoskopas</option>
+    			      					<option  value="14">Kriminalai</option>
+    			      					<option  value="6">Kultūra</option>
+    			      	 	         </select>
+                     <div class="clear">&nbsp;</div>
+                     5:                  <select class="cat-select" style="width: 87%;" name="m2-item-5" id="m2-item-5">
+                      					<option  value="3">Sportas</option>
+    			      					<option  value="4">Žmonės.lt</option>
+    			      					<option  selected="selected"  value="5">Gazas.lt</option>
+    			      					<option  value="7">Mokslas.IT</option>
+    			      					<option  value="9">PasaulisKišenėje.lt</option>
+    			      					<option  value="10">Ikrauk.lt</option>
+    			      					<option  value="15">Ji24.lt</option>
+    			      					<option  value="8">Deuce.lt</option>
+    			      					<option  value="1">Aktualu</option>
+    			      					<option  value="2">Pinigai</option>
+    			      					<option  value="11">Laisvalaikis</option>
+    			      					<option  value="12">Augintiniai</option>
+    			      					<option  value="13">Horoskopas</option>
+    			      					<option  value="14">Kriminalai</option>
+    			      					<option  value="6">Kultūra</option>
+    			      	 	         </select>
+                     <div class="clear">&nbsp;</div>
+                     6:                  <select class="cat-select" style="width: 87%;" name="m2-item-6" id="m2-item-6">
+                      					<option  value="3">Sportas</option>
+    			      					<option  value="4">Žmonės.lt</option>
+    			      					<option  value="5">Gazas.lt</option>
+    			      					<option  value="7">Mokslas.IT</option>
+    			      					<option  value="9">PasaulisKišenėje.lt</option>
+    			      					<option  value="10">Ikrauk.lt</option>
+    			      					<option  value="15">Ji24.lt</option>
+    			      					<option  value="8">Deuce.lt</option>
+    			      					<option  value="1">Aktualu</option>
+    			      					<option  value="2">Pinigai</option>
+    			      					<option  value="11">Laisvalaikis</option>
+    			      					<option  value="12">Augintiniai</option>
+    			      					<option  value="13">Horoskopas</option>
+    			      					<option  value="14">Kriminalai</option>
+    			      					<option  selected="selected"  value="6">Kultūra</option>
+    			      	 	         </select>
+                     <div class="clear">&nbsp;</div>
+                     7:                  <select class="cat-select" style="width: 87%;" name="m2-item-7" id="m2-item-7">
+                      					<option  value="3">Sportas</option>
+    			      					<option  value="4">Žmonės.lt</option>
+    			      					<option  value="5">Gazas.lt</option>
+    			      					<option  selected="selected"  value="7">Mokslas.IT</option>
+    			      					<option  value="9">PasaulisKišenėje.lt</option>
+    			      					<option  value="10">Ikrauk.lt</option>
+    			      					<option  value="15">Ji24.lt</option>
+    			      					<option  value="8">Deuce.lt</option>
+    			      					<option  value="1">Aktualu</option>
+    			      					<option  value="2">Pinigai</option>
+    			      					<option  value="11">Laisvalaikis</option>
+    			      					<option  value="12">Augintiniai</option>
+    			      					<option  value="13">Horoskopas</option>
+    			      					<option  value="14">Kriminalai</option>
+    			      					<option  value="6">Kultūra</option>
+    			      	 	         </select>
+                     <div class="clear">&nbsp;</div>
+                     
+
+        <div class="clear">&nbsp;</div>
+        <a class="red-button fl" onclick="changeList(7);">Išsaugoti išdėstymą</a>
+        <a class="white-button fr" onclick="reset15min();">Atstatyti</a>
+
+        <div class="clear">&nbsp;</div>
+        <div class="ln-grey">&nbsp;</div>
+
+        <a class="black-button" style="float: right;" onclick="showBox('m-settings', 'button-settings');"><span class="close">&nbsp;</span>Uždaryti</a>
+        <div class="clear">&nbsp;</div>
+	</div>
+
+  <div class="clear"></div>
+</div><div class="list-head-title" style="margin: 0;">
+	<div class="list-head-title-inner">
+	    <strong>Orai.lt - orų prognozės</strong>
+	</div>
+</div>
+<div class="weather-reviews">
+	<div style="padding-bottom:5px">
+		<a href="http://m.15min.lt/orai/apzvalga/savaites" class="white-button" style="float:right">Savaitės apžvalga</a>
+		<a href="http://m.15min.lt/orai/apzvalga" class="white-button" style="float:right">Dienos apžvalga</a>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="clear"></div>
+
+<div class="weather">
+	
+	<div>
+		Šiandien: 2013.03.04	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/vilnius">Vilnius</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_01d"></span>
+			<span class="fl temperature" style="color: #002093;">-5&deg;</span>
+			<div class="wind">Vėjas: <span>ŠV</span>, 4.6m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_01n"></span>
+			<span class="fl temperature" style="color: #002093;">-11&deg;</span>
+			<div class="wind">Vėjas <span>ŠV</span>, 4m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/vilnius">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/kaunas">Kaunas</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_01d"></span>
+			<span class="fl temperature" style="color: #002093;">-3&deg;</span>
+			<div class="wind">Vėjas: <span>ŠV</span>, 2.4m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_01n"></span>
+			<span class="fl temperature" style="color: #002093;">-8&deg;</span>
+			<div class="wind">Vėjas <span>ŠV</span>, 3.2m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/kaunas">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/klaipeda">Klaipėda</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_03d"></span>
+			<span class="fl temperature" style="color: #f20c00;">1&deg;</span>
+			<div class="wind">Vėjas: <span>PV</span>, 6m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_01n"></span>
+			<span class="fl temperature" style="color: #002093;">-5&deg;</span>
+			<div class="wind">Vėjas <span>ŠR</span>, 1.4m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/klaipeda">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/siauliai">Šiauliai</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_03d"></span>
+			<span class="fl temperature" style="color: #002093;">-4&deg;</span>
+			<div class="wind">Vėjas: <span>PV</span>, 1.7m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_01n"></span>
+			<span class="fl temperature" style="color: #002093;">-13&deg;</span>
+			<div class="wind">Vėjas <span>ŠV</span>, 4m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/siauliai">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/panevezys">Panevėžys</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_04d"></span>
+			<span class="fl temperature" style="color: #002093;">-4&deg;</span>
+			<div class="wind">Vėjas: <span>ŠV</span>, 1.4m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_01n"></span>
+			<span class="fl temperature" style="color: #002093;">-12&deg;</span>
+			<div class="wind">Vėjas <span>ŠV</span>, 4.2m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/panevezys">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/alytus">Alytus</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_01d"></span>
+			<span class="fl temperature" style="color: #002093;">-3&deg;</span>
+			<div class="wind">Vėjas: <span>ŠV</span>, 3.2m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_04n"></span>
+			<span class="fl temperature" style="color: #002093;">-9&deg;</span>
+			<div class="wind">Vėjas <span>PV</span>, 4.5m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/alytus">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/utena">Utena</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_04d"></span>
+			<span class="fl temperature" style="color: #002093;">-6&deg;</span>
+			<div class="wind">Vėjas: <span>V</span>, 2.2m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_01n"></span>
+			<span class="fl temperature" style="color: #002093;">-13&deg;</span>
+			<div class="wind">Vėjas <span>ŠV</span>, 3.5m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/utena">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+			
+	<div class="weather_box">
+		<h2><a href="http://m.15min.lt/orai/mazeikiai">Mažeikiai</a></h2>
+		<div class="part left">
+			<span class="fl weather_icons weather_icon_03d"></span>
+			<span class="fl temperature" style="color: #002093;">-1&deg;</span>
+			<div class="wind">Vėjas: <span>PV</span>, 5.3m/s</div>
+		</div>
+		<div class="part">
+			<span class="fl weather_icons weather_icon_01n"></span>
+			<span class="fl temperature" style="color: #002093;">-9&deg;</span>
+			<div class="wind">Vėjas <span>ŠV</span>, 1.8m/s</div>
+		</div>
+		<p class="long_term fr"><a href="http://m.15min.lt/orai/mazeikiai">Ilgalaikė prognozė</a> &rsaquo;&rsaquo;</p>
+		<div class="clear"></div>
+	</div>
+	
+		
+	<div class="weather_box" style="font-size:1em;">
+		<br> <a href="http://m.15min.lt/orai/apzvalga/savaites">Daugiau</a> &rsaquo;&rsaquo;	</div>
+	
+	
+<div class="weather_box other_places">
+			<small>Kiti miestai:</small><br /> <a href="http://m.15min.lt/orai/amsterdam" title="Ilgalaikė orų prognozė Amsterdamas ">Amsterdamas </a>, <a href="http://m.15min.lt/orai/andorra-la-vella" title="Ilgalaikė orų prognozė Andora ">Andora </a>, <a href="http://m.15min.lt/orai/athens" title="Ilgalaikė orų prognozė Atėnai ">Atėnai </a>, <a href="http://m.15min.lt/orai/barcelona" title="Ilgalaikė orų prognozė Barselona">Barselona</a>, <a href="http://m.15min.lt/orai/belgrade" title="Ilgalaikė orų prognozė Belgradas ">Belgradas </a>, <a href="http://m.15min.lt/orai/berlin" title="Ilgalaikė orų prognozė Berlynas">Berlynas</a>, <a href="http://m.15min.lt/orai/berne" title="Ilgalaikė orų prognozė Bernas ">Bernas </a>, <a href="http://m.15min.lt/orai/bratislava" title="Ilgalaikė orų prognozė Bratislava ">Bratislava </a>, <a href="http://m.15min.lt/orai/bremen" title="Ilgalaikė orų prognozė Bremenas">Bremenas</a>, <a href="http://m.15min.lt/orai/budapest" title="Ilgalaikė orų prognozė Budapeštas ">Budapeštas </a>, <a href="http://m.15min.lt/orai/bucharest" title="Ilgalaikė orų prognozė Bukareštas ">Bukareštas </a>, <a href="http://m.15min.lt/orai/dublin" title="Ilgalaikė orų prognozė Dublinas ">Dublinas </a>, <a href="http://m.15min.lt/orai/frankfurt-am-main" title="Ilgalaikė orų prognozė Frankfurtas prie Maino">Frankfurtas prie Maino</a>, <a href="http://m.15min.lt/orai/helsinki" title="Ilgalaikė orų prognozė Helsinkis ">Helsinkis </a>, <a href="http://m.15min.lt/orai/kyiv" title="Ilgalaikė orų prognozė Kijevas ">Kijevas </a>, <a href="http://m.15min.lt/orai/chisinau" title="Ilgalaikė orų prognozė Kišiniovas ">Kišiniovas </a>, <a href="http://m.15min.lt/orai/copenhagen" title="Ilgalaikė orų prognozė Kopenhaga ">Kopenhaga </a>, <a href="http://m.15min.lt/orai/lisbon" title="Ilgalaikė orų prognozė Lisabona ">Lisabona </a>, <a href="http://m.15min.lt/orai/ljublijana" title="Ilgalaikė orų prognozė Liubliana ">Liubliana </a>, <a href="http://m.15min.lt/orai/luxembourg" title="Ilgalaikė orų prognozė Liuksemburgas">Liuksemburgas</a>, <a href="http://m.15min.lt/orai/london" title="Ilgalaikė orų prognozė Londonas ">Londonas </a>, <a href="http://m.15min.lt/orai/madrid" title="Ilgalaikė orų prognozė Madridas">Madridas</a>, <a href="http://m.15min.lt/orai/valletta" title="Ilgalaikė orų prognozė Malta Valeta ">Malta Valeta </a>, <a href="http://m.15min.lt/orai/moscow" title="Ilgalaikė orų prognozė Maskva ">Maskva </a>, <a href="http://m.15min.lt/orai/milan" title="Ilgalaikė orų prognozė Milanas">Milanas</a>, <a href="http://m.15min.lt/orai/minsk" title="Ilgalaikė orų prognozė Minskas ">Minskas </a>, <a href="http://m.15min.lt/orai/monaco" title="Ilgalaikė orų prognozė Monakas ">Monakas </a>, <a href="http://m.15min.lt/orai/oslo" title="Ilgalaikė orų prognozė Oslas ">Oslas </a>, <a href="http://m.15min.lt/orai/paris" title="Ilgalaikė orų prognozė Paryžius ">Paryžius </a>, <a href="http://m.15min.lt/orai/prague" title="Ilgalaikė orų prognozė Praha ">Praha </a>, <a href="http://m.15min.lt/orai/reykjavik" title="Ilgalaikė orų prognozė Reikjavikas ">Reikjavikas </a>, <a href="http://m.15min.lt/orai/rome" title="Ilgalaikė orų prognozė Roma ">Roma </a>, <a href="http://m.15min.lt/orai/riga" title="Ilgalaikė orų prognozė Ryga ">Ryga </a>, <a href="http://m.15min.lt/orai/san-marino" title="Ilgalaikė orų prognozė San Marinas ">San Marinas </a>, <a href="http://m.15min.lt/orai/sarajevo" title="Ilgalaikė orų prognozė Sarajevas ">Sarajevas </a>, <a href="http://m.15min.lt/orai/skopje" title="Ilgalaikė orų prognozė Skopjė ">Skopjė </a>, <a href="http://m.15min.lt/orai/sofia" title="Ilgalaikė orų prognozė Sofija ">Sofija </a>, <a href="http://m.15min.lt/orai/saint-petersburg" title="Ilgalaikė orų prognozė St.Peterburgas">St.Peterburgas</a>, <a href="http://m.15min.lt/orai/stokcholm" title="Ilgalaikė orų prognozė Stokholmas ">Stokholmas </a>, <a href="http://m.15min.lt/orai/tallinn" title="Ilgalaikė orų prognozė Talinas ">Talinas </a>, <a href="http://m.15min.lt/orai/tirana" title="Ilgalaikė orų prognozė Tirana ">Tirana </a>, <a href="http://m.15min.lt/orai/warsaw" title="Ilgalaikė orų prognozė Varšuva ">Varšuva </a>, <a href="http://m.15min.lt/orai/vatican" title="Ilgalaikė orų prognozė Vatikanas ">Vatikanas </a>, <a href="http://m.15min.lt/orai/vienna" title="Ilgalaikė orų prognozė Viena ">Viena </a>, <a href="http://m.15min.lt/orai/zagreb" title="Ilgalaikė orų prognozė Zagrebas ">Zagrebas </a>, <a href="http://m.15min.lt/orai/varena" title="Ilgalaikė orų prognozė Varėna">Varėna</a>, <a href="http://m.15min.lt/orai/birzai" title="Ilgalaikė orų prognozė Biržai">Biržai</a>, <a href="http://m.15min.lt/orai/telsiai" title="Ilgalaikė orų prognozė Telšiai">Telšiai</a>, <a href="http://m.15min.lt/orai/taurage" title="Ilgalaikė orų prognozė Tauragė">Tauragė</a>, <a href="http://m.15min.lt/orai/marijampole" title="Ilgalaikė orų prognozė Marijampolė">Marijampolė</a>, <a href="http://m.15min.lt/orai/kedainiai" title="Ilgalaikė orų prognozė Kėdainiai">Kėdainiai</a>, <a href="http://m.15min.lt/orai/jonava" title="Ilgalaikė orų prognozė Jonava">Jonava</a>, <a href="http://m.15min.lt/orai/kretinga" title="Ilgalaikė orų prognozė Kretinga">Kretinga</a>, <a href="http://m.15min.lt/orai/plunge" title="Ilgalaikė orų prognozė Plungė">Plungė</a>, <a href="http://m.15min.lt/orai/radviliskis" title="Ilgalaikė orų prognozė Radviliškis">Radviliškis</a>, <a href="http://m.15min.lt/orai/silute" title="Ilgalaikė orų prognozė Šilutė">Šilutė</a>, <a href="http://m.15min.lt/orai/ukmerge" title="Ilgalaikė orų prognozė Ukmergė">Ukmergė</a>, <a href="http://m.15min.lt/orai/visaginas" title="Ilgalaikė orų prognozė Visaginas">Visaginas</a>, <a href="http://m.15min.lt/orai/gargzdai" title="Ilgalaikė orų prognozė Gargždai">Gargždai</a><br /><br />
+		<small>Kurortai:</small><br /> <a href="http://m.15min.lt/orai/palanga" title="Ilgalaikė orų prognozė Palanga">Palanga</a>, <a href="http://m.15min.lt/orai/nida" title="Ilgalaikė orų prognozė Nida">Nida</a>, <a href="http://m.15min.lt/orai/juodkrante" title="Ilgalaikė orų prognozė Juodkrantė">Juodkrantė</a>, <a href="http://m.15min.lt/orai/sventoji" title="Ilgalaikė orų prognozė Šventoji">Šventoji</a>, <a href="http://m.15min.lt/orai/anyksciai" title="Ilgalaikė orų prognozė Anykščiai">Anykščiai</a>, <a href="http://m.15min.lt/orai/druskininkai" title="Ilgalaikė orų prognozė Druskininkai">Druskininkai</a>, <a href="http://m.15min.lt/orai/birstonas" title="Ilgalaikė orų prognozė Birštonas">Birštonas</a>, <a href="http://m.15min.lt/orai/moletai" title="Ilgalaikė orų prognozė Molėtai">Molėtai</a>, <a href="http://m.15min.lt/orai/trakai" title="Ilgalaikė orų prognozė Trakai">Trakai</a><br /><br />
+	<small>Prognozė burlenčių, jėgos aitvarų ir jachtų mėgėjams:</small><br /> <a href="http://m.15min.lt/orai/svencele" title="Ilgalaikė orų prognozė Svencelė">Svencelė</a>, <a href="http://m.15min.lt/orai/dreverna" title="Ilgalaikė orų prognozė Dreverna">Dreverna</a>, <a href="http://m.15min.lt/orai/ventaine" title="Ilgalaikė orų prognozė Ventainė">Ventainė</a>, <a href="http://m.15min.lt/orai/monciskes" title="Ilgalaikė orų prognozė Monciškės">Monciškės</a>, <a href="http://m.15min.lt/orai/elektrenu-marios" title="Ilgalaikė orų prognozė Elektrėnų marios">Elektrėnų marios</a>, <a href="http://m.15min.lt/orai/kauno-marios" title="Ilgalaikė orų prognozė Kauno marios">Kauno marios</a>, <a href="http://m.15min.lt/orai/dusia" title="Ilgalaikė orų prognozė Dusia">Dusia</a>, <a href="http://m.15min.lt/orai/kertuoja" title="Ilgalaikė orų prognozė Kertuoja">Kertuoja</a>, <a href="http://m.15min.lt/orai/plateliai" title="Ilgalaikė orų prognozė Plateliai">Plateliai</a>, <a href="http://m.15min.lt/orai/alausas" title="Ilgalaikė orų prognozė Alaušas">Alaušas</a>, <a href="http://m.15min.lt/orai/galve" title="Ilgalaikė orų prognozė Galvė">Galvė</a>
+</div>	
+	<div class="weather-item weather-legend">
+      Vėjo kryptys: Š = Šiaurės, P = Pietų, R = Rytų, V = Vakarų, NK - Nepastovios krypties
+    </div>
+	
+		<div class="weather_credit">
+	<a href="//www.orai.lt/"><img src="//s1.15cdn.lt/img/saltiniulogo/1338215618_orai_lt_smalllogo.png" alt="Orai.lt" style="float:none !important" /></a>
+</div> </div>
+<div class="clear">&nbsp;</div>
+<div id="footer">
+	<strong class="footer-title">Susisiekite su redakcija:</strong>
+	<div class="clear"></div>
+	<a class="white-button text-up" href="tel:+37052105895">Skambinti</a>
+	<a class="white-button text-up" href="mailto:15min@15min.lt">Rašyti laišką</a>
+	<div class="clear"></div>
+		<a class="green-button" style="float: none; text-align: center; margin-top: 8px;" href="http://m.15min.lt/?load_best_and_greenest_page_in_the_world=yes">Klasikinė 15min.lt versija</a>
+		<div class="clear"></div>
+	<div class="copyrights">Visos teisės saugomos. © 2008 - 2013 UAB "15min". Kopijuoti, dauginti bei platinti galima tik gavus raštišką UAB "15min" sutikimą.</div>
+</div>
+
+<script type="text/javascript"> /* <![CDATA[ */ var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-5421911-1']); _gaq.push(['_setDomainName', '15min.lt']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); var pageTracker = { _trackPageview: function( name ) { if ( !name || !_gaq ) { return false; } return _gaq.push( ['_trackPageview', name] ); } }; /* ]]> */ </script> 
+
+<div style="width: 1px; height: 1px;">
+	<script type="text/javascript">
+	/* <![CDATA[ */ var google_conversion_id = 1006073932; var google_conversion_label = "XirtCPSD7gQQzPDd3wM"; var google_custom_params = window.google_tag_params; var google_remarketing_only = true; /* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+	<noscript>
+	<div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1006073932/?value=0&amp;label=XirtCPSD7gQQzPDd3wM&amp;guid=ON&amp;script=0"/></div>
+	</noscript>
+</div>
+
+
+<script type="text/javascript" src="http://www.15min.lt/js/tracking/spring.js"></script>
+<script type="text/javascript">/* <![CDATA[ */ var sp_e0 = { "s":"15min", "cp":"15min", "url":document.location.href }; spring.c(sp_e0); /* ]]> */</script>
+<noscript><img src="http://15min.spring-tns.net/j0=,,,;+,,cp=15min;;;;" alt=""/></noscript>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var a_href, img_src;
+	var gates_on = false;
+	var jq_lb_10 = $('#lazy_banner_pos_10');
+	var bn_string = 'p=9999&lng=lt&vt=2&cb=banners_loaded';
+	var bannerCallback = [];
+	var gatewayCallback;
+
+	
+	/* ]]> */
+	</script>
+	
+<script type="text/javascript">
+/* <![CDATA[ */
+function scrollTop(top) {
+	if (!top) {
+		top = 0;
+	}
+	document.body.scrollTop = top;
+}
+
+function getScrollTop()
+{
+	return document.body.scrollTop;
+}
+/* ]]> */
+</script></body>
+</html>
